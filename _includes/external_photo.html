@@ -1,0 +1,9 @@
+<figure class="photo">
+  <img src="{{ include.url }}" 
+       alt="{{ include.alt | default: include.caption }}" 
+       loading="lazy"
+       style="max-width: 100%; height: auto;">
+  {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
